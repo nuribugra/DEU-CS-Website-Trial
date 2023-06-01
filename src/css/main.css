@@ -20,11 +20,6 @@ a {
   text-decoration: none;
 }
 
-@media (max-width: 992px) {
-  html {
-    font-size: 8px;
-  }
-}
 .background {
   position: absolute;
   top: 0;
@@ -69,16 +64,18 @@ header .logo .department {
   line-height: 5rem;
 }
 header .nav-btn {
-  z-index: 1;
+  z-index: 100;
   color: #F1F6F9;
   font-size: 4rem;
   cursor: pointer;
+  padding: 0.3rem 1rem;
+  border: 1.5px solid #F1F6F9;
+  border-radius: 10px;
   display: none;
 }
-@media (max-width: 992px) {
-  header .nav-btn {
-    display: block;
-  }
+header .nav-btn.open {
+  border: 1px solid #F1F6F9;
+  border-radius: 10px;
 }
 header .search-box {
   padding: 0;
@@ -121,15 +118,32 @@ header .search-box .search-btn:focus {
   outline: none;
 }
 
-@media (max-width: 992px) {
-  .search-box {
-    display: none;
-  }
-}
 nav {
   width: 100%;
   background-color: #2E2D29;
   padding: 0rem 4rem;
+}
+nav.open {
+  display: block;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  z-index: 99;
+  opacity: 0.96;
+}
+nav .main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+}
+nav .main-nav.open {
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+  width: 100%;
+  height: 100vh;
 }
 nav .dropdown-btn {
   cursor: pointer;
@@ -140,6 +154,9 @@ nav .dropdown-btn {
   font-size: 1.4rem;
   transition: 0.3s;
   font-weight: 700;
+}
+nav .dropdown-btn.open {
+  font-size: 2rem;
 }
 nav .dropdown-btn:hover, nav .dropdown-btn:focus {
   background-color: #EAE9E7;
@@ -158,6 +175,9 @@ nav .dropdown-content {
   overflow: auto;
   z-index: 1;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+nav .dropdown-content.open {
+  position: relative;
 }
 nav .dropdown-content a {
   color: black;
@@ -180,11 +200,6 @@ nav ul {
   list-style-type: none;
 }
 
-@media (max-width: 992px) {
-  nav {
-    display: none;
-  }
-}
 .top-bar[lang=en],
 .department-details[lang=en],
 .main-nav[lang=en],
@@ -393,16 +408,6 @@ nav ul {
     opacity: 1;
   }
 }
-@media (min-width: 1000px) and (max-width: 1300px) {
-  .container {
-    width: 90%;
-  }
-}
-@media (max-width: 992px) {
-  .container {
-    width: 90%;
-  }
-}
 footer {
   width: 100%;
   margin-top: 10rem;
@@ -491,6 +496,25 @@ footer .bottom .social-links .social-logo:hover {
   transform: scale(110%);
 }
 
+@media (max-width: 1300px) {
+  .container {
+    width: 90%;
+  }
+}
+@media (max-width: 992px) {
+  html {
+    font-size: 8px;
+  }
+  header .nav-btn {
+    display: block;
+  }
+  nav {
+    display: none;
+  }
+  .search-box {
+    display: none;
+  }
+}
 .top-bar {
   width: 100%;
   background-color: #012549;

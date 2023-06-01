@@ -1,0 +1,24 @@
+@media (max-width: 1300px) {
+    .container {
+        width: 90%;
+    }
+}
+
+// Header - Navbar
+@media (max-width: 992px) {
+    html {
+        font-size: 8px;
+    }
+    
+    header .nav-btn {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+    .search-box {
+        display: none;
+    }
+
+}
