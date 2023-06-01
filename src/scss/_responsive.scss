@@ -12,6 +12,7 @@
     
     header .nav-btn {
         display: block;
+        right: 9.5rem;
     }
 
     nav {
@@ -21,4 +22,99 @@
         display: none;
     }
 
+    .announcements-links {
+
+        .announcements {
+            width: 80%;
+
+            .slide {
+                height: 100vh;
+            }
+        }
+
+        .news {
+            width: 70%;
+
+
+            .all-news-btn {
+                margin-top: 2rem;
+            }
+
+            .news-box {
+                text-align: left;
+            }
+        }
+
+    }
+
+    .container {
+        width: 100%;
+        flex-flow: column;
+    }
+
+    .announcements, .news {
+        width: 100%;
+        text-align: center;
+        margin: auto;
+    }
+
+   
+
+
+
+    //External Links
+
+    .brands-box {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        .logo {
+            .main-title {
+                font-size: 3rem;
+                line-height: 4rem;
+            }
+
+            .faculty {
+                font-size: 2rem;
+            }
+
+            .department {
+                font-size: 2rem;
+                line-height: 3rem;
+            }
+        }
+
+        .nav-btn {
+            font-size: 3rem;
+            right: 7.5rem;
+        }
+        
+    }
+
+    footer {
+        
+        .top-info {
+            flex-flow: column;
+            padding: 1rem;
+            align-items: center;
+            text-align: center;
+
+            .contact-box {
+                width: 100%;
+
+                .address {
+                    width: 100%;
+                    margin-top: 2rem;
+                }
+            }
+            .map {
+                width: 100%;
+                margin: 2rem auto; 
+                padding: 1rem;
+            }
+        }
+    }
 }

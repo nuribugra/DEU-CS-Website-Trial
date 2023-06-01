@@ -169,7 +169,7 @@ nav .main-nav {
 nav .main-nav.open {
   flex-direction: column;
   justify-content: center;
-  gap: 3rem;
+  gap: 2rem;
   width: 100%;
   height: 100vh;
 }
@@ -343,6 +343,7 @@ nav ul {
 }
 .announcements-links .news {
   width: 35%;
+  margin-top: 2rem;
 }
 .announcements-links .news .all-news-btn {
   font-size: 1.7rem;
@@ -539,12 +540,75 @@ footer .bottom .social-links .social-logo:hover {
   }
   header .nav-btn {
     display: block;
+    right: 9.5rem;
   }
   nav {
     display: none;
   }
   .search-box {
     display: none;
+  }
+  .announcements-links .announcements {
+    width: 80%;
+  }
+  .announcements-links .announcements .slide {
+    height: 100vh;
+  }
+  .announcements-links .news {
+    width: 70%;
+  }
+  .announcements-links .news .all-news-btn {
+    margin-top: 2rem;
+  }
+  .announcements-links .news .news-box {
+    text-align: left;
+  }
+  .container {
+    width: 100%;
+    flex-flow: column;
+  }
+  .announcements, .news {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+  }
+  .brands-box {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 600px) {
+  header .logo .main-title {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+  header .logo .faculty {
+    font-size: 2rem;
+  }
+  header .logo .department {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  header .nav-btn {
+    font-size: 3rem;
+    right: 7.5rem;
+  }
+  footer .top-info {
+    flex-flow: column;
+    padding: 1rem;
+    align-items: center;
+    text-align: center;
+  }
+  footer .top-info .contact-box {
+    width: 100%;
+  }
+  footer .top-info .contact-box .address {
+    width: 100%;
+    margin-top: 2rem;
+  }
+  footer .top-info .map {
+    width: 100%;
+    margin: 2rem auto;
+    padding: 1rem;
   }
 }
 .top-bar {
