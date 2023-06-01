@@ -47,6 +47,20 @@ header {
         }
     }
 
+    .nav-btn {
+        z-index: 1;
+        color: $white;
+        font-size: 4rem;
+        cursor: pointer;
+        display: none;
+    }
+
+    @media (max-width: 992px) {
+        .nav-btn {
+            display: block;
+        }
+    }
+
     // Search Box
     .search-box {
         padding: 0;
@@ -92,6 +106,12 @@ header {
                 outline: none;
             }
         }
+    }
+}
+
+@media (max-width: 992px) {
+    .search-box {
+        display: none;
     }
 }
 
@@ -153,6 +173,12 @@ nav {
 
     ul {
         list-style-type: none;
+    }
+}
+
+@media (max-width: 992px) {
+    nav {
+        display: none;
     }
 }
 

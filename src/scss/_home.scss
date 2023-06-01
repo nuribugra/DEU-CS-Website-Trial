@@ -233,3 +233,15 @@
         opacity: 1
     }
 }
+
+@media (min-width: 1000px) and (max-width: 1300px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        width: 90%;
+    } 
+}
