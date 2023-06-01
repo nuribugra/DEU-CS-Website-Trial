@@ -56,10 +56,14 @@ header {
         border: 1.5px solid $white;
         border-radius: 10px; 
         display: none;
+        position: absolute;
+        right: 3rem;
+        top: 7rem;
 
         &.open {
             border: 1px solid $white;
             border-radius: 10px;
+            position: fixed;
         }
     }
 
@@ -68,9 +72,37 @@ header {
         padding: 0;
         z-index: 1;
 
+        &.open {
+            display: block;
+            z-index: 100;
+            position: fixed;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%);
+
+            .search-input {
+                padding: 1rem 1.5rem;
+                font-size: 2rem;
+                background-color: #3b3a39;
+                color: $white;
+            }
+            .search-btn {
+                font-size: 2rem;
+                padding: 1.2rem;
+
+                background-color: $main-color;
+                border-left: 1px solid #012951;
+
+                &:hover {
+                    background-color: #0d3156;
+                }
+            }
+        }
+
         .search-form {
             display: flex;
             justify-content: center;
+            border-radius: 10px;
             @include box-shadow;
         }
 
@@ -121,7 +153,7 @@ nav {
     &.open {
         display: block;
         height: 100vh;
-        position: absolute;
+        position: fixed;
         top: 0;
         z-index: 99;
         opacity: 0.96;
@@ -179,7 +211,11 @@ nav {
       @include box-shadow;
 
       &.open {
-        position: relative;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: 101;
       }
     }
       

@@ -38,8 +38,10 @@ function showSlides(n) {
 const navBtn = document.querySelector(".nav-btn");
 const nav = document.querySelector("nav");
 const mainNav = document.querySelector(".main-nav");
+const searchBox = document.querySelector(".search-box");
 const navItems = document.querySelectorAll(".nav-item");
 const dropdownBtn = document.querySelectorAll(".dropdown-btn");
+const dropdownContent = document.querySelectorAll(".dropdown-content");
 
 let showMenu = false;
 
@@ -50,16 +52,20 @@ function toggleMenu() {
         navBtn.classList.add("open");
         nav.classList.add("open");
         mainNav.classList.add("open");
+        searchBox.classList.add("open");
         navItems.forEach((item) => item.classList.add("open"));
         dropdownBtn.forEach((item) => item.classList.add("open"));
+        dropdownContent.forEach((item) => item.classList.add("open"));
 
         showMenu = true;
     } else {
         navBtn.classList.remove("open");
         nav.classList.remove("open");
         mainNav.classList.remove("open");
+        searchBox.classList.remove("open");
         navItems.forEach((item) => item.classList.remove("open"));
         dropdownBtn.forEach((item) => item.classList.remove("open"));
+        dropdownContent.forEach((item) => item.classList.remove("open"));
 
         showMenu = false;
     }
