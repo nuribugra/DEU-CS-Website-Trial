@@ -11,9 +11,10 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
     <link rel="manifest" href="favicons/site.webmanifest">
     <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-    <title lang="tr">Dokuz Eylül Bilgisayar Bilimleri</title>
+    <title lang="tr">Bilgisayar Bilimleri Bölümü</title>
 </head>
 <body>
     <div class="top-bar" lang="tr">
@@ -27,10 +28,10 @@
                 </p>
                 <div class="language-switch">
                     <p><button class="language-btn">
-                        <img src="img/english.png" alt="uk flag">
+                        <img src="img/english.png" alt="uk flag" id="english-btn">
                     </button></p>
                     <p><button class="language-btn">
-                        <img src="img/turkish.png" alt="turkish flag">
+                        <img src="img/turkish.png" alt="turkish flag" id="turkish-btn">
                     </button></p>
                 </div>
             </div>
@@ -59,10 +60,15 @@
     </div>
     <header>
         <div class="top-container department-details" lang="tr">
-            <div class="logo">
-                <a href="index.html" class="main-title">Dokuz Eylül</a>
-                <a href="https://fen.deu.edu.tr/tr/" class="faculty">FEN FAKÜLTESİ</a> <br>
-                <a href="index.html" class="department">Bilgisayar Bilimleri</a>  
+            <div class="img-logo">
+                <a href="index.html">
+                    <img src="img/deu.png" alt="deu logo" class="university-logo">
+                </a>
+                <div class="logo">
+                    <a href="index.html" class="main-title">Dokuz Eylül</a>
+                    <a href="https://fen.deu.edu.tr/tr/" class="faculty">FEN FAKÜLTESİ</a> <br>
+                    <a href="index.html" class="department">Bilgisayar Bilimleri</a>  
+                </div>
             </div>
             
             <div class="search-box">
@@ -100,8 +106,8 @@
     <nav>
         <ul class="main-nav" lang="tr">
                 <li class="nav-item dropdown">
-                    <button class="dropdown-btn">HAKKIMIZDA <i class="fa-solid fa-chevron-down"></i></button>
-                    <ul id="dropdownAbout" class="dropdown-content" style="min-width: 146px;">
+                    <button class="dropdown-btn">HAKKIMIZDA <i class="fa-solid fa-caret-down fa-sm"></i></button>
+                    <ul id="dropdownAbout" class="dropdown-content">
                         <li>
                             <a href="#history.html">Tarihçemiz</a>
                         </li>
@@ -120,16 +126,16 @@
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
-                    <button class="dropdown-btn">KADROMUZ <i class="fa-solid fa-chevron-down"></i></button>
-                    <div id="dropdownStuffs" class="dropdown-content" style="min-width: 139px;">
+                    <button class="dropdown-btn">KADROMUZ <i class="fa-solid fa-caret-down fa-sm"></i> </button>
+                    <div id="dropdownStuffs" class="dropdown-content">
                         <a href="#administration.html">Yönetim Kurulu</a>
                         <a href="#academic-stuffs.html">Akademik Kadro</a>
                         <a href="#researchers.html">Araştırma Görevlileri</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
-                    <button class="dropdown-btn">ARAŞTIRMA <i class="fa-solid fa-chevron-down"></i></button>
-                    <ul id="dropdownResearch" class="dropdown-content" style="min-width: 140px;">
+                    <button class="dropdown-btn">ARAŞTIRMA <i class="fa-solid fa-caret-down fa-sm"></i> </button>
+                    <ul id="dropdownResearch" class="dropdown-content">
                         <li>
                             <a href="#research-ai.html">Yapay Zeka</a>
                         </li>
@@ -142,7 +148,7 @@
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
-                    <button class="dropdown-btn">EĞİTİM <i class="fa-solid fa-chevron-down"></i></button>
+                    <button class="dropdown-btn">EĞİTİM <i class="fa-solid fa-caret-down fa-sm"></i> </button>
                     <ul id="dropdownEducation" class="dropdown-content">
                         <li>
                             <a href="#calendar.html">Akademik Takvim</a>
@@ -159,8 +165,8 @@
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
-                    <button class="dropdown-btn">ADAY ÖĞRENCİ <i class="fa-solid fa-chevron-down"></i></button>
-                    <ul id="dropdownApplicants" class="dropdown-content" style="min-width: 166px;">
+                    <button class="dropdown-btn">ADAY ÖĞRENCİ <i class="fa-solid fa-caret-down fa-sm"></i></button>
+                    <ul id="dropdownApplicants" class="dropdown-content">
                         <li>
                             <a href="#job-opportunities.html">İş İmkanları</a>
                         </li>
@@ -182,86 +188,87 @@
             </div>
         </ul>
         <ul class="main-nav" lang="en">
-            <div class="top-container">
-                <li class="nav-item dropdown">
-                    <button class="dropdown-btn">ABOUT <i class="fa-solid fa-chevron-down"></i></button>
-                    <ul id="dropdownAbout" class="dropdown-content">
-                        <li>
-                            <a href="#history.html">History</a>
-                        </li>
-                        <li>
-                            <a href="#mission.html">Mission</a>
-                        </li>
-                        <li>
-                            <a href="#vision.html">Vision</a>
-                        </li>
-                        <li>
-                            <a href="#department.html">Department</a>
-                        </li>
-                        <li>
-                            <a href="#graduates.html">Graduates</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="nav-item dropdown">
-                    <button class="dropdown-btn">PEOPLE <i class="fa-solid fa-chevron-down"></i></button>
-                    <div id="dropdownStuffs" class="dropdown-content">
-                        <a href="#administration.html">Administrative Staff</a>
-                        <a href="#academic-stuffs.html">Academic Staff</a>
-                        <a href="#researchers.html">Research Assistants</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <button class="dropdown-btn">RESEARCH <i class="fa-solid fa-chevron-down"></i></button>
-                    <ul id="dropdownResearch" class="dropdown-content">
-                        <li>
-                            <a href="#research-ai.html">Artificial Intelligence</a>
-                        </li>
-                        <li>
-                            <a href="#research-dataScience.html">Data Science</a>
-                        </li>
-                        <li>
-                            <a href="#research-cs.html">Computer Science</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="nav-item dropdown">
-                    <button class="dropdown-btn">EDUCATION <i class="fa-solid fa-chevron-down"></i></button>
-                    <ul id="dropdownEducation" class="dropdown-content">
-                        <li>
-                            <a href="#calendar.html">Academic Calendar</a>
-                        </li>
-                        <li>
-                            <a href="#courses.html">Courses</a>
-                        </li>
-                        <li>
-                            <a href="#timetable.html">Timetable</a>
-                        </li>
-                        <li>
-                            <a href="#optional.html">Optional Courses</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="nav-item dropdown">
-                    <button class="dropdown-btn">APPLICANTS <i class="fa-solid fa-chevron-down"></i></button>
-                    <ul id="dropdownApplicants" class="dropdown-content">
-                        <li>
-                            <a href="#job-opportunities.html">Job Opportunities</a>
-                        </li>
-                        <li>
-                            <a href="#physical.html">Physical Facilities</a>
-                        </li>
-                        <li>
-                            <a href="#library.html">Library</a>
-                        </li>
-                        <li>
-                            <a href="#labs.html">Labs</a>
-                        </li>
-                        <li>
-                            <a href="#communities.html">Student Communities</a>
-                        </li>
-                    </ul>
-                </li>
+            <li class="nav-item dropdown">
+                <button class="dropdown-btn">ABOUT <i class="fa-solid fa-caret-down fa-sm"></i></button>
+                <ul id="dropdownAbout" class="dropdown-content">
+                    <li>
+                        <a href="#history.html">History</a>
+                    </li>
+                    <li>
+                        <a href="#mission.html">Mission</a>
+                    </li>
+                    <li>
+                        <a href="#vision.html">Vision</a>
+                    </li>
+                    <li>
+                        <a href="#department.html">Department</a>
+                    </li>
+                    <li>
+                        <a href="#graduates.html">Graduates</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <button class="dropdown-btn">PEOPLE <i class="fa-solid fa-caret-down fa-sm"></i> </button>
+                <div id="dropdownStuffs" class="dropdown-content">
+                    <a href="#administration.html">Administrative Staff</a>
+                    <a href="#academic-stuffs.html">Academic Staff</a>
+                    <a href="#researchers.html">Researcher Assistants</a> 
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <button class="dropdown-btn">RESEARCH <i class="fa-solid fa-caret-down fa-sm"></i> </button>
+                <ul id="dropdownResearch" class="dropdown-content">
+                    <li>
+                        <a href="#research-ai.html">Artificial Intelligence</a>
+                    </li>
+                    <li>
+                        <a href="#research-dataScience.html">Data Science</a>
+                    </li>
+                    <li>
+                        <a href="#research-cs.html">Computer Science</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <button class="dropdown-btn">EDUCATION <i class="fa-solid fa-caret-down fa-sm"></i> </button>
+                <ul id="dropdownEducation" class="dropdown-content">
+                    <li>
+                        <a href="#calendar.html">Academic Calendar</a>
+                    </li>
+                    <li>
+                        <a href="#courses.html">Courses</a>
+                    </li>
+                    <li>
+                        <a href="#timetable.html">Timetable</a>
+                    </li>
+                    <li>
+                        <a href="#optional.html">Optional Courses</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <button class="dropdown-btn">APPLICANTS <i class="fa-solid fa-caret-down fa-sm"></i></button>
+                <ul id="dropdownApplicants" class="dropdown-content">
+                    <li>
+                        <a href="#job-opportunities.html">Jop Opportunuties</a>
+                    </li>
+                    <li>
+                        <a href="#physical.html">Physical Facilities</a>
+                    </li>
+                    <li>
+                        <a href="#library.html">Library</a>
+                    </li>
+                    <li>
+                        <a href="#labs.html">Labs</a>
+                    </li>
+                    <li>
+                        <a href="#communities.html">Student Communities</a>
+                    </li>
+                </ul>
+                
+            </li>
+        </div>
         </ul>
     </nav>
 
@@ -271,7 +278,6 @@
                 <div class="announcements">
                     <h1 class="announcements-title">Duyurular</h1>
                     <div class="slideshow">
-
                         <div class="all-announcements">
                             <a href="#">Tüm Duyurular</a>
                         </div>
