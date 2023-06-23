@@ -206,7 +206,7 @@ nav .dropdown {
 }
 nav .dropdown-content {
   display: none;
-  min-width: 16rem;
+  min-width: 16.5rem;
   position: absolute;
   background-color: #f1f1f1;
   overflow: auto;
@@ -255,18 +255,35 @@ nav ul {
   width: 65%;
 }
 .announcements-links .announcements .announcements-title {
-  color: #012951;
-  font-size: 3.5rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 2px solid #012951;
+  color: #F1F6F9;
+  font-size: 2.5rem;
+  padding: 1rem;
+  background-color: #2E2D29;
+  border: 2px solid #2E2D29;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  width: 100%;
   display: inline-block;
 }
+.announcements-links .announcements .announcements-title .slides-pagination {
+  float: right;
+  font-size: 2rem;
+  margin-top: 0.5rem;
+}
+.announcements-links .announcements .announcements-title .clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.announcements-links .announcements .announcements-title i {
+  font-size: 2.2rem;
+}
 .announcements-links .announcements .slideshow {
-  margin-top: 2rem;
   width: 100%;
   height: 50vh;
-  border: 4px solid rgba(46, 45, 41, 0.8);
-  border-radius: 3px;
+  border: 4px solid #2E2D29;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
   position: relative;
 }
 .announcements-links .announcements .slideshow .all-announcements {
@@ -352,6 +369,7 @@ nav ul {
 }
 .announcements-links .news {
   width: 35%;
+  position: relative;
 }
 .announcements-links .news .all-news-btn {
   font-size: 1.7rem;
@@ -366,19 +384,33 @@ nav ul {
   opacity: 0.9;
 }
 .announcements-links .news .news-title {
-  font-size: 3.5rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 2px solid #012951;
-  display: inline-block;
-  color: #012951;
+  font-size: 2.5rem;
+  padding: 1rem;
+  border: 2px solid #2E2D29;
+  border-bottom: none;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  width: 100%;
+  color: #F1F6F9;
+  background-color: #2E2D29;
+}
+.announcements-links .news .news-title i {
+  font-size: 2.2rem;
+}
+.announcements-links .news .news-buttons {
+  position: absolute;
+  background-color: #2E2D29;
+  color: #F1F6F9;
+  top: 1.5rem;
+  right: 1.5rem;
+  font-size: 2rem;
 }
 .announcements-links .news .news-box {
   list-style: none;
-  margin-top: 2rem;
   padding: 0;
   border: 2px solid #2E2D29;
-  border-top-width: 2rem;
-  border-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
 }
 .announcements-links .news .news-box .box-item {
   border-bottom: 1.5px solid #2E2D29;
@@ -396,6 +428,10 @@ nav ul {
   color: #2E2D29;
   font-size: 1.2rem;
   margin-top: 0.6rem;
+}
+.announcements-links .news .news-box .box-item .date i {
+  font-size: 1.1rem;
+  color: #012549;
 }
 
 .container {
