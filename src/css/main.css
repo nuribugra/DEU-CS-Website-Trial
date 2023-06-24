@@ -414,7 +414,8 @@ nav ul {
 }
 .announcements-links .news .news-box .box-item {
   border-bottom: 1.5px solid #2E2D29;
-  padding: 1rem 1.5rem;
+  padding: 1.5rem 1.5rem;
+  height: 12.4vh;
 }
 .announcements-links .news .news-box .box-item__link {
   color: #012549;
