@@ -1,4 +1,5 @@
 // Slideshow
+
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -13,6 +14,7 @@ function currentSlide(n) {
 function showSlides(n) {
     let i;
     let slides = document.getElementsByClassName("announcement-slides");
+    console.log(slides);
     let dots = document.getElementsByClassName("dot");
 
     if (n > slides.length) {
@@ -32,6 +34,7 @@ function showSlides(n) {
     slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += " active";
 }
+
 
 // Navbar Button (Mobile)
 
